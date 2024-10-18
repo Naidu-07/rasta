@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: space-around; /* Evenly space out the boxes */
+    align-items: center;
+    /* background-color: #f4f4f9; */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 50px; /* Padding to give some space around the boxes */
+    width: 100%;
+  }
+  
+  /* Logo Card styling */
+  .logo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 4px 10px #445c84;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 22%; /* Adjust width to span across full width of the page */
+    height: 180px; /* Fixed height for all boxes */
+    cursor: pointer;
+  }
+  
+  .logo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px #445c84;
+  }
+  
+  /* Icon Styling in cards */
+  .logo-card svg {
+    width: 60px;
+    height: 60px;
+    color: #445c84;
+    transition: transform 0.4s ease-in-out;
+    margin-bottom: 10px;
+  }
+  
+  .logo-card:hover svg {
+    transform: rotate(360deg) scale(1.2);
+    color: black;
+  }
+  
+  /* Typography styling in cards */
+  h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .logo-card:hover h3 {
+    color: #445c84;
+  }
+  
